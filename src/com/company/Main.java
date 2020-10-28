@@ -6,21 +6,16 @@ public class Main {
 
     public static void main(String[] args) {
         String myFavoritefood = "";
-        int nam = 2;
+        final int nam = 2;
         String word = "Food";
-        Scanner s = new Scanner(System.in);
+        myFavoritefood= nam+word;
 
-        System.out.println(nam + word);
-
-        System.out.println(myFavoritefood = word);
-
-        System.out.println("Вы сохранили положительное число");
-
-        {
-
-            System.out.println("Введите ваша имя");
-            String string = s.nextLine();
-            System.out.println("привет " + string);
-          }
+        System.out.println(myFavoritefood+" "+nam+" " +word);
+        if (nam < 0) {
+            System.out.println("Вы сохранил отрицтвельное число");
+        } else {
+            System.out.println("Вы сохранили положитеьное число");
         }
-     }
+
+    }
+}
